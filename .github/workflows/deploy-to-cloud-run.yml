@@ -1,0 +1,110 @@
+name: Deploy to Cloud Run
+
+on:
+  # Trigger the workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to deploy (default: develop)"
+        required: false
+        default: "develop"
+      environment:
+        description: "Deployment environment"
+        required: false
+        default: "develop"
+        type: choice
+        options:
+          - develop
+          - staging
+          - master
+  
+  # Trigger on push to specific branches
+  push:
+    branches:
+      - develop
+      - staging
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    # Use GitHub Environments for better control
+    environment:
+      name: ${{ github.event.inputs.environment || github.ref_name }}
+
+    steps:
+      # Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Authenticate Google Cloud SDK
+      - name: Authenticate GCP using SA
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+
+      # Set up Google Cloud SDK
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+
+      # Authenticate Docker with GCR
+      - name: Authenticate Docker with GCR
+        run: gcloud auth configure-docker us-central1-docker.pkg.dev
+
+      # Disable Docker Buildx to use regular Docker build
+      - name: Disable Docker Buildx
+        run: |
+          docker buildx uninstall || true
+          export DOCKER_BUILDKIT=0
+
+      # Fetch secrets from GCP Secrets Manager
+      - name: Fetch secrets for build
+        id: fetch-secrets
+        run: |
+          export VITE_APP_ENV=$(gcloud secrets versions access latest --secret="VITE_APP_ENV")
+          export VITE_API_URL=$(gcloud secrets versions access latest --secret="VITE_API_URL")
+          export VITE_APP_TITLE=$(gcloud secrets versions access latest --secret="VITE_APP_TITLE")
+          export VITE_CLERK_PUBLISHABLE_KEY=$(gcloud secrets versions access latest --secret="VITE_CLERK_PUBLISHABLE_KEY")
+          echo "VITE_APP_ENV=$VITE_APP_ENV" >> $GITHUB_ENV
+          echo "VITE_API_URL=$VITE_API_URL" >> $GITHUB_ENV
+          echo "VITE_APP_TITLE=$VITE_APP_TITLE" >> $GITHUB_ENV
+          echo "VITE_CLERK_PUBLISHABLE_KEY=$VITE_CLERK_PUBLISHABLE_KEY" >> $GITHUB_ENV
+
+      # Build the Docker image
+      - name: Build the Docker image
+        env:
+          DOCKER_BUILDKIT: 0
+        run: |
+          docker build \
+            --build-arg VITE_API_URL="${VITE_API_URL}" \
+            --build-arg VITE_CLERK_PUBLISHABLE_KEY="${VITE_CLERK_PUBLISHABLE_KEY}" \
+            --build-arg VITE_APP_TITLE="${VITE_APP_TITLE}" \
+            --build-arg VITE_APP_ENV="${VITE_APP_ENV}" \
+            --tag ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.REPOSITORY_NAME }}/${{ secrets.SERVICE_NAME }}:${{ github.sha }} \
+            .
+
+      # Push the Docker image to Google Container Registry
+      - name: Push Docker image to GCR
+        run: |
+          docker push ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.REPOSITORY_NAME }}/${{ secrets.SERVICE_NAME }}:${{ github.sha }}
+
+      # Deploy to Cloud Run
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy ${{ secrets.SERVICE_NAME }} \
+            --image ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.REPOSITORY_NAME }}/${{ secrets.SERVICE_NAME }}:${{ github.sha }} \
+            --platform managed \
+            --region ${{ secrets.GCP_REGION }} \
+            --allow-unauthenticated \
+            --vpc-connector default  \
+            --vpc-egress=all-traffic \
+            --memory 1G \
+            --min-instances 1 \
+            --update-secrets VITE_API_URL=projects/${{ secrets.GCP_SECRETS_PROJECT_ID }}/secrets/VITE_API_URL:latest \
+            --update-secrets VITE_CLERK_PUBLISHABLE_KEY=projects/${{ secrets.GCP_SECRETS_PROJECT_ID }}/secrets/VITE_CLERK_PUBLISHABLE_KEY:latest \
+            --update-secrets VITE_APP_TITLE=projects/${{ secrets.GCP_SECRETS_PROJECT_ID }}/secrets/VITE_APP_TITLE:latest \
+            --update-secrets VITE_APP_NAME=projects/${{ secrets.GCP_SECRETS_PROJECT_ID }}/secrets/VITE_APP_NAME:latest \
+            --update-secrets VITE_APP_ENV=projects/${{ secrets.GCP_SECRETS_PROJECT_ID }}/secrets/VITE_APP_ENV:latest

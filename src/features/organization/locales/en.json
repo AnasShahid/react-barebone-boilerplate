@@ -1,0 +1,205 @@
+{
+  "organization": {
+    "common": {
+      "users": "Users",
+      "invites": "Invites",
+      "actions": "Actions",
+      "email": "Email",
+      "role": "Role",
+      "name": "Name",
+      "website": "Website",
+      "industry": "Industry",
+      "contactNumber": "Contact Number",
+      "primaryAddress": "Primary Address",
+      "billingAddress": "Billing Address",
+      "required": "*",
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "close": "Close",
+      "loading": "Loading...",
+      "error": "Error",
+      "member": "Member",
+      "admin": "Admin",
+      "noData": "No data found",
+      "edit": "Edit",
+      "delete": "Delete",
+      "deleting": "Deleting...",
+      "noPermissions": "No permissions",
+      "roles": "Organization Roles",
+      "addRole": "Add Role"
+    },
+    "usersTable": {
+      "title": "Users",
+      "inviteUser": "Invite User",
+      "email": "Email",
+      "role": "Role",
+      "name": "Name",
+      "actions": "Actions",
+      "noUsersFound": "No users found",
+      "makeAdmin": "Make Admin",
+      "setAsMember": "Set as Member",
+      "emailUser": "Email User",
+      "removeUser": "Remove User",
+      "updateRole": "Update Role"
+    },
+    "invitesTable": {
+      "title": "Invites",
+      "email": "Email",
+      "invitedBy": "Invited By",
+      "invitedDate": "Invited Date",
+      "expiry": "Expiry",
+      "role": "Role",
+      "status": "Status",
+      "actions": "Actions",
+      "noInvitesFound": "No invites found",
+      "deleteInvite": "Delete Invite",
+      "statusLabels": {
+        "pending": "Pending",
+        "accepted": "Accepted",
+        "rejected": "Rejected",
+        "expired": "Expired"
+      },
+      "unknown": "Unknown"
+    },
+    "editOrgForm": {
+      "title": "Organization Information",
+      "namePlaceholder": "Organization name",
+      "websitePlaceholder": "https://example.com",
+      "emailPlaceholder": "info@example.com",
+      "contactNumberPlaceholder": "+1 (555) 123-4567",
+      "selectIndustry": "Select an industry",
+      "primaryAddressPlaceholder": "Enter primary address",
+      "billingAddressPlaceholder": "Enter billing address",
+      "validation": {
+        "nameRequired": "Organization name is required",
+        "websiteRequired": "Website is required",
+        "websiteValid": "Please enter a valid URL",
+        "emailRequired": "Email is required",
+        "emailValid": "Please enter a valid email address",
+        "contactNumberRequired": "Contact number is required",
+        "contactNumberValid": "Please enter a valid phone number",
+        "industryRequired": "Industry is required",
+        "primaryAddressRequired": "Primary address is required",
+        "billingAddressRequired": "Billing address is required"
+      },
+      "industries": {
+        "tech": "Technology",
+        "healthcare": "Healthcare",
+        "finance": "Finance",
+        "education": "Education",
+        "retail": "Retail",
+        "manufacturing": "Manufacturing",
+        "consulting": "Consulting",
+        "other": "Other"
+      }
+    },
+    "sendUserInvites": {
+      "title": "Invite Users",
+      "description": "Invite users to join your organization. You can add multiple users at once.",
+      "loadingRoles": "Loading available roles...",
+      "errorLoadingRoles": "Error loading roles. Please try again.",
+      "inviteNumber": "Invite #{{number}}",
+      "inviteUser": "Invite User",
+      "inviteUsers": "Invite Users",
+      "remove": "Remove",
+      "emailLabel": "Email",
+      "emailPlaceholder": "email@example.com",
+      "roleLabel": "Role",
+      "roleDescription": "The role determines what permissions the user will have.",
+      "selectRole": "Select a role",
+      "addAnotherInvite": "Add Another Invite",
+      "sendInvites": "Send Invites",
+      "sending": "Sending...",
+      "toast": {
+        "success": "Successfully sent {{count}} invite",
+        "successMultiple": "Successfully sent {{count}} invites",
+        "partialSuccess": "Sent {{success}} invite, but {{failure}} failed",
+        "partialSuccessMultiple": "Sent {{success}} invites, but {{failure}} failed",
+        "error": "Failed to send {{count}} invite",
+        "errorMultiple": "Failed to send {{count}} invites",
+        "generalError": "Something went wrong while sending invites"
+      },
+      "validation": {
+        "emailValid": "Please enter a valid email address"
+      }
+    },
+    "pages": {
+      "organizationsPage": {
+        "title": "Manage Organizations",
+        "createOrg": "Create Organization",
+        "noOrgs": "You don't have any organizations yet",
+        "createYourFirst": "Create your first organization",
+        "noOrganizations": "No organizations found",
+        "deleteDialog": {
+          "title": "Delete Organization",
+          "description": "Warning: This action is irreversible. Deleting the organization will permanently remove all associated data, and all users in the organization will lose access to all data.",
+          "confirmationText": "To confirm, please type 'delete' below:",
+          "confirmationPlaceholder": "Type 'delete' to confirm"
+        }
+      },
+      "editOrganizationInfo": {
+        "title": "Organization Information",
+        "backToOrgs": "Back to Organizations"
+      },
+      "editOrganizationUsers": {
+        "title": "Organization Users",
+        "backToOrgs": "Back to Organizations",
+        "invitationDeletedSuccess": "Invitation deleted successfully",
+        "invitationDeletedError": "Failed to delete invitation"
+      },
+      "editOrganizationRoles": {
+        "title": "Organization Roles",
+        "backToOrgs": "Back to Organizations"
+      }
+    },
+    "roleDetailsSheet": {
+      "systemRolePermissions": "System roles cannot have their permissions modified",
+      "roleName": "Role Name",
+      "roleDescription": "Role Description",
+      "rolePermissions": "Role Permissions",
+      "selectedPermissions": "Selected",
+      "permissions": "permissions",
+      "cancel": "Cancel",
+      "roleNameRequired": "Role name is required",
+      "roleDescriptionRequired": "Role description is required",
+      "saving": "Saving...",
+      "createRole": "Create Role",
+      "updateRole": "Update Role"
+    },
+    "editOrganizationInfo": {
+      "title": "Organization Information",
+      "backToOrgs": "Back to Organizations"
+    },
+    "roleSelectorDialog": {
+      "title": "Select Role",
+      "description": "Select a role for this user.",
+      "selectRole": "Select a role",
+      "selectPlaceholder": "Select a role",
+      "updateRole": "Update Role",
+      "selectRoleError": "Please select a role"
+    },
+    "rolesTable": {
+      "name": "Name",
+      "description": "Description",
+      "permissions": "Permissions",
+      "actions": "Actions",
+      "isSystemRole": "System Role",
+      "noData": "No data found",
+      "noDescription": "No description",
+      "isASystemRole": "Yes",
+      "isNotASystemRole": "No",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "createOrganizationDialog": {
+      "title": "Create New Organization",
+      "description": "Create a new organization to collaborate with your team",
+      "orgName": "Organization Name",
+      "orgDescription": "Description",
+      "orgWebsite": "Website Address",
+      "enterOrganizationName": "Enter Organization Name",
+      "enterOrganizationDescription": "Enter Organization Description"
+    }
+  }
+}

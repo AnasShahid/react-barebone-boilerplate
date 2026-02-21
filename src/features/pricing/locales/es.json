@@ -1,0 +1,32 @@
+{
+  "pricing": {
+    "title": "Planes de Precios",
+    "subtitle": "Elige el plan perfecto para tus necesidades",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "description": "Para proyectos personales",
+        "price": "Gratis",
+        "period": "/mes"
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Para uso profesional",
+        "price": "€9.99",
+        "period": "/mes"
+      },
+      "enterprise": {
+        "name": "Empresa",
+        "description": "Para equipos grandes",
+        "price": "Personalizado",
+        "period": "/mes"
+      }
+    },
+    "cta": {
+      "getStarted": "Comenzar",
+      "contactUs": "Contáctanos"
+    }
+  }
+}

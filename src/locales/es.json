@@ -1,0 +1,63 @@
+{
+  "common": {
+    "welcome": "Bienvenido a React + Javascript + Shadcn UI",
+    "navigation": {
+      "home": "Inicio",
+      "pricing": "Precios",
+      "login": "Iniciar Sesión",
+      "signup": "Registrarse",
+      "dashboard": "Panel",
+      "profile": "Perfil",
+      "settings": "Configuración",
+      "logout": "Cerrar Sesión"
+    },
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "settings": "Configuración",
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "deleting": "Eliminando...",
+    "upload": "Subir",
+    "uploading": "Subiendo...",
+    "close": "Cerrar",
+    "view": "Ver",
+    "edit": "Editar"
+  },
+  "home": {
+    "title": "Plantilla Moderna de React",
+    "subtitle": "Comienza tu próximo proyecto con Javascript, React y Shadcn UI",
+    "getStarted": "Comenzar",
+    "learnMore": "Más Información",
+    "features": {
+      "title": "Características",
+      "javascript": "Soporte Javascript",
+      "components": "Componentes Reutilizables",
+      "themes": "Temas Claro/Oscuro",
+      "i18n": "Internacionalización"
+    }
+  },
+  "error": {
+    "notFound": {
+      "title": "Página No Encontrada",
+      "description": "Lo sentimos, no pudimos encontrar la página que buscas. Por favor, verifica la URL o regresa a la página principal."
+    },
+    "unauthorized": {
+      "title": "Acceso No Autorizado",
+      "description": "Necesitas iniciar sesión para acceder a esta página. Por favor, inicia sesión e intenta nuevamente."
+    },
+    "serverError": {
+      "title": "Error del Servidor",
+      "description": "Lo sentimos, algo salió mal en nuestro servidor. Por favor, intenta nuevamente más tarde o contacta a soporte si el problema persiste."
+    },
+    "action": {
+      "backHome": "Volver al Inicio",
+      "login": "Iniciar Sesión",
+      "tryAgain": "Intentar Nuevamente"
+    }
+  }
+}

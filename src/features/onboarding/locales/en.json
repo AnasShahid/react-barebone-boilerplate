@@ -1,0 +1,65 @@
+{
+  "onboarding": {
+    "title": "Onboarding",
+    "subtitle": "Set up your new account.",
+    "stepOne": {
+      "title": "Hi there 👋, Welcome to React-boilerplate!",
+      "description": "We’re thrilled to have you on board! 🚀 Let’s get you set up for success.",
+      "secondaryDescription": "Next up, you’ll create your organization to start using the platform. You’ll also have the option to invite your team members, so everyone can collaborate seamlessly.",
+      "button": "Let's get started"
+    },
+    "createOrg": {
+      "title": "Create Your Organization",
+      "description": "Set up your organization to get started with React-boilerplate AI. You will be able to invite your team members in the next step.",
+      "action": "Create Organization",
+      "inProgress": "Creating...",
+      "form": {
+        "name": {
+          "title": "Organization Name",
+          "placeholder": "Enter your organization name",
+          "description": "This will be your organization's display name.",
+          "minLength": "Organization name must be at least 3 characters",
+          "maxLenght": "Organization name cannot exceed 50 characters"
+        },
+        "slug": {
+          "title": "URL Slug",
+          "placeholder": "your-org-name",
+          "description": "This will be used in your organization's URL.",
+          "minLength": "Slug must be at least 3 characters",
+          "maxLenght": "Slug cannot exceed 30 characters",
+          "invalid": "Slug can only contain lowercase letters, numbers, and hyphens"
+        },
+        "description": {
+          "title": "Organization Description",
+          "placeholder": "Brief description of your organization",
+          "description": "Optional: Describe what your organization does.",
+          "maxLenght": "Description cannot exceed 500 characters"
+        }
+      }
+    },
+    "invite": {
+      "title": "Invite Colleagues",
+      "description": "Invite your team members to your organization."
+    },
+    "inviteUsers": {
+      "form": {
+        "emails": {
+          "title": "Email Addresses",
+          "placeholder": "email1@example.com, email2@example.com",
+          "description": "Enter email addresses separated by commas",
+          "required": "At least one email address is required",
+          "invalid": "Please enter valid comma-separated email addresses"
+        },
+        "submit": "Send Invites",
+        "submitting": "Sending invites...",
+        "submitError": "Failed to send invitations. Please try again.",
+        "skip": "Skip"
+      }
+    },
+    "welcome": {
+      "title": "You're All Set! 🎉",
+      "description": "Congratulations! You've successfully set up your organization. Now, dive into React-boilerplate and start making the most of its powerful features. If you need any help, we're just a click away. Enjoy the journey!",
+      "action": "Go to Dashboard"
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "projects": {
+    "title": "Projects",
+    "description": "Manage all projects for your organization.",
+    "addProject": "Add Project",
+    "searchPlaceholder": "Search projects...",
+    "statusFilterPlaceholder": "Filter by status",
+    "statuses": {
+      "ALL": "All Statuses",
+      "ACTIVE": "Active",
+      "LEAD": "Lead",
+      "PROSPECT": "Prospect",
+      "INACTIVE": "Inactive"
+    },
+    "type": {
+      "fixedBid": "Fixed Bid",
+      "timeAndMaterial": "Time & Material",
+      "partnership": "Partnership",
+      "unknown": "Unknown"
+    },
+    "paymentFrequencies": {
+      "milestoneBound": "Milestone Bound",
+      "monthly": "Monthly",
+      "weekly": "Weekly"
+    },
+    "projectType": "Project Type",
+    "selectProjectType": "Select type",
+    "paymentFrequencyLabel": "Payment Frequency",
+    "selectPaymentFrequency": "Select frequency",
+    "startDate": "Start Date",
+    "plannedEndDate": "End Date",
+    "customer": "Customer",
+    "createProjectForm": {
+      "title": "Create New Project",
+      "description": "Add a new project to your organization.",
+      "projectName": "Project Name",
+      "projectNamePlaceholder": "Enter project name",
+      "nameRequired": "Project name is required (min 2 characters)",
+      "projectType": "Project Type",
+      "selectProjectType": "Select project type",
+      "projectTypeRequired": "Project type is required",
+      "paymentFrequency": "Payment Frequency",
+      "selectPaymentFrequency": "Select payment frequency",
+      "paymentFrequencyRequired": "Payment frequency is required",
+      "customer": "Customer",
+      "selectCustomer": "Select a customer",
+      "searchCustomers": "Search customers...",
+      "noCustomersFound": "No customers found",
+      "customerRequired": "Customer is required",
+      "configTemplate": "Config Template",
+      "selectConfigTemplate": "Select a template",
+      "searchTemplates": "Search templates...",
+      "noTemplatesFound": "No templates found",
+      "configTemplateRequired": "Config template is required",
+      "startDate": "Start Date",
+      "startDateRequired": "Start date is required",
+      "plannedEndDate": "Planned End Date",
+      "plannedEndDateRequired": "Planned end date is required",
+      "endDateAfterStartDate": "End date must be after start date",
+      "pickDate": "Select a date",
+      "cancel": "Cancel",
+      "createProject": "Create Project",
+      "creatingProject": "Creating Project...",
+      "projectAddedSuccess": "Project added successfully",
+      "projectAddedError": "Failed to add project",
+      "advancedOptions": "Advanced Options"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "requirements": "Requirements",
+      "qa": "Q&A",
+      "functionalSpecifications": "Functional Specifications",
+      "workBreakdown": "Work Breakdown"
+    },
+    "overview": {
+      "title": "Project Overview",
+      "description": "Key information about the project and the related information."
+    },
+    "requirements": {
+      "title": "Project Requirements",
+      "description": "Create/Update project requirements.",
+      "addRequirementCta": "Add Requirement", 
+      "addRequirementButton": "Add Requirements",
+      "viewAll": "View All Requirements",
+      "editRequirement": "Edit Requirement",
+      "deleteRequirement": "Delete Requirement", 
+      "list": "Requirements List",
+      "createDialog": {
+        "title": "Add New Requirement",
+        "description": "Enter the details for the new requirement."
+      },
+      "form": {
+        "titleLabel": "Requirement Title",
+        "titlePlaceholder": "Enter requirement title",
+        "createButton": "Create Requirement"
+      },
+      "deleteDialog": {
+        "title": "Delete '{{name}}' Requirement?",
+        "description": "This action cannot be undone. This will permanently delete the requirement and its associated data."
+      },
+      "notifications": {
+        "createSuccess": "Requirement created successfully.",
+        "createError": "Failed to create requirement.",
+        "deleteSuccess": "Requirement '{{name}}' deleted successfully.",
+        "deleteError": "Failed to delete requirement '{{name}}'"
+      },
+      "requirementDeleted": "Requirement deleted successfully",
+      "requirementModalDescription": "Add details about the project requirement including text and supporting documents.",
+      "requirementName": "Requirement Name",
+      "nameRequired": "Requirement name is required",
+      "requirementText": "Requirement Details",
+      "searchPlaceholder": "Search requirements...",
+      "filterPlaceholder": "Filter",
+      "filterTypes": {
+        "all": "All Types",
+        "text": "Text Only",
+        "document": "Documents"
+      },
+      "lastUpdated": "Last updated:",
+      "documents": "Documents",
+      "documentCount": "Document(s)",
+      "addDocument": "Add Document",
+      "addFirstDocument": "Add First Document",
+      "uploadDocument": "Upload Document",
+      "uploadDocumentDescription": "Upload a document to attach to this requirement. Supported formats: PDF, DOC, DOCX.",
+      "dragAndDrop": "Drag and drop a file here, or click to browse",
+      "supportedFormats": "Supported formats: PDF, DOC, DOCX (Max 20MB)",
+      "invalidFileType": "Invalid file type. Please upload a PDF, DOC, or DOCX file.",
+      "fileTooLarge": "File is too large. Maximum size is 10MB.",
+      "noFileSelected": "No file selected. Please select a file to upload.",
+      "documentUploaded": "Document uploaded successfully",
+      "documentUploadError": "Failed to upload document",
+      "deleteDocument": "Delete Document",
+      "deleteDocumentConfirmation": "Are you sure you want to delete '{{documentName}}'? This action cannot be undone.",
+      "documentDeleted": "Document deleted successfully",
+      "documentDeleteError": "Failed to delete document",
+      "viewDocument": "View Document",
+      "documentNotAvailable": "Document is not available for viewing",
+      "noDocuments": "No documents attached",
+      "noDocumentsYet": "No documents have been added yet",
+      "noRequirementSelected": "Select a requirement to view its details.",
+      "noContent": "No content available",
+      "actions": {
+        "title": "Actions",
+        "edit": "Edit",
+        "view": "View",
+        "viewTasks": "View Tasks",
+        "archive": "Archive",
+        "delete": "Delete"
+      },
+      "viewMode": {
+        "cards": "Card View",
+        "table": "Table View"
+      },
+      "expandText": "Click to expand",
+      "documentName": "PSO - Project Documentation and Requirements",
+      "documentAdded": "Added",
+      "requirementAdded": "Requirement added successfully",
+      "requirementAddError": "Failed to add requirement",
+      "requirementUpdated": "Requirement updated successfully",
+      "requirementUpdateError": "Failed to update requirement",
+      "noRequirements": "No requirements found. Click \"Add Requirements\" to add new requirements for this project.",
+      "deleteRequirementConfirmation": "Are you sure you want to delete '{{name}}'? This action cannot be undone.",
+    "archivedMessage": "{name} has been archived successfully",
+    "archived": "Project archived"
+    },
+    "qa": {
+      "title": "Questions & Answers",
+      "description": "Track questions and answers related to the project."
+    },
+    "functionalSpecifications": {
+      "title": "Functional Specifications",
+      "description": "Detailed functional specifications for the project."
+    },
+    "workBreakdown": {
+      "title": "Work Breakdown",
+      "description": "Project work breakdown structure and tasks."
+    },
+    "payment_frequencyUpdated": "Payment frequency updated",
+    "payment_frequencyUpdateSuccess": "Payment frequency has been updated successfully",
+    "payment_frequencyUpdateFailed": "Failed to update payment frequency",
+    "project_typeUpdated": "Project type updated",
+    "project_typeUpdateSuccess": "Project type has been updated successfully",
+    "project_typeUpdateFailed": "Failed to update project type",
+    "start_dateUpdated": "Start date updated",
+    "start_dateUpdateSuccess": "Start date has been updated successfully",
+    "start_dateUpdateFailed": "Failed to update start date",
+    "planned_end_dateUpdated": "End date updated",
+    "planned_end_dateUpdateSuccess": "End date has been updated successfully",
+    "planned_end_dateUpdateFailed": "Failed to update end date",
+    "customer_idUpdated": "Customer updated",
+    "customer_idUpdateSuccess": "Customer has been updated successfully",
+    "customer_idUpdateFailed": "Failed to update customer"
+  },
+  "common": {
+    "idCopiedToClipboard": "ID copied to clipboard",
+    "copied": "Copied",
+    "failedToCopy": "Failed to copy",
+    "error": "An error occurred. Please try again.",
+    "notSet": "Not set",
+    "copyId": "Copy ID",
+    "cancel": "Cancel",
+    "upload": "Upload",
+    "save": "Save",
+    "uploading": "Uploading...",
+    "delete": "Delete",
+    "saving": "Saving...",
+    "deleting": "Deleting...",
+    "areYouSure": "Are you sure?",
+    "confirm": "Confirm",
+    "view": "View"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "projects": {
+    "title": "Proyectos",
+    "description": "Gestiona todos los proyectos de tu organización.",
+    "addProject": "Añadir Proyecto",
+    "searchPlaceholder": "Buscar proyectos...",
+    "statusFilterPlaceholder": "Filtrar por estado",
+    "statuses": {
+      "ALL": "Todos los Estados",
+      "ACTIVE": "Activo",
+      "LEAD": "Potencial",
+      "PROSPECT": "Prospecto",
+      "INACTIVE": "Inactivo"
+    },
+    "type": {
+      "fixedBid": "Precio Fijo",
+      "timeAndMaterial": "Tiempo y Materiales",
+      "partnership": "Asociación",
+      "unknown": "Desconocido"
+    },
+    "paymentFrequencies": {
+      "milestoneBound": "Vinculado a Hitos",
+      "monthly": "Mensual",
+      "weekly": "Semanal"
+    },
+    "projectType": "Tipo de Proyecto",
+    "selectProjectType": "Seleccionar tipo",
+    "paymentFrequencyLabel": "Frecuencia de Pago",
+    "selectPaymentFrequency": "Seleccionar frecuencia",
+    "startDate": "Fecha de Inicio",
+    "plannedEndDate": "Fecha de Finalización",
+    "customer": "Cliente",
+    "createProjectForm": {
+      "title": "Crear Nuevo Proyecto",
+      "description": "Añade un nuevo proyecto a tu organización.",
+      "projectName": "Nombre del Proyecto",
+      "projectNamePlaceholder": "Introduce el nombre del proyecto",
+      "nameRequired": "El nombre del proyecto es obligatorio (mínimo 2 caracteres)",
+      "projectType": "Tipo de Proyecto",
+      "selectProjectType": "Seleccionar tipo de proyecto",
+      "projectTypeRequired": "El tipo de proyecto es obligatorio",
+      "paymentFrequency": "Frecuencia de Pago",
+      "selectPaymentFrequency": "Seleccionar frecuencia de pago",
+      "paymentFrequencyRequired": "La frecuencia de pago es obligatoria",
+      "customer": "Cliente",
+      "selectCustomer": "Seleccionar un cliente",
+      "searchCustomers": "Buscar clientes...",
+      "noCustomersFound": "No se encontraron clientes",
+      "customerRequired": "El cliente es obligatorio",
+      "configTemplate": "Plantilla de Configuración",
+      "selectConfigTemplate": "Seleccionar una plantilla",
+      "searchTemplates": "Buscar plantillas...",
+      "noTemplatesFound": "No se encontraron plantillas",
+      "configTemplateRequired": "La plantilla de configuración es obligatoria",
+      "startDate": "Fecha de Inicio",
+      "startDateRequired": "La fecha de inicio es obligatoria",
+      "plannedEndDate": "Fecha de Finalización Planificada",
+      "plannedEndDateRequired": "La fecha de finalización planificada es obligatoria",
+      "endDateAfterStartDate": "La fecha de finalización debe ser posterior a la fecha de inicio",
+      "pickDate": "Seleccionar una fecha",
+      "cancel": "Cancelar",
+      "createProject": "Crear Proyecto",
+      "creatingProject": "Creando Proyecto...",
+      "projectAddedSuccess": "Proyecto añadido correctamente",
+      "projectAddedError": "Error al añadir el proyecto",
+      "advancedOptions": "Opciones Avanzadas"
+    },
+    "tabs": {
+      "overview": "Resumen",
+      "requirements": "Requisitos",
+      "qa": "Preguntas y Respuestas",
+      "functionalSpecifications": "Especificaciones Funcionales",
+      "workBreakdown": "Desglose de Trabajo"
+    },
+    "overview": {
+      "title": "Resumen del Proyecto",
+      "description": "Información clave sobre el proyecto y la información relacionada."
+    },
+    "requirements": {
+      "title": "Requisitos del Proyecto",
+      "description": "Crear/Actualizar requisitos del proyecto.",
+      "addRequirement": "Añadir Requisito",
+      "addRequirementButton": "Añadir Requisitos",
+      "viewAll": "Ver Todos los Requisitos",
+      "list": "Lista de Requisitos",
+      "createDialog": {
+        "title": "Añadir Nuevo Requisito",
+        "description": "Ingresa los detalles para el nuevo requisito."
+      },
+      "form": {
+        "titleLabel": "Título del Requisito",
+        "titlePlaceholder": "Ingresa el título del requisito",
+        "createButton": "Crear Requisito"
+      },
+      "deleteDialog": {
+        "title": "¿Eliminar requisito '{{name}}'?",
+        "description": "Esta acción no se puede deshacer. Esto eliminará permanentemente el requisito y sus datos asociados."
+      },
+      "notifications": {
+        "createSuccess": "Requisito creado correctamente.",
+        "createError": "Error al crear el requisito.",
+        "deleteSuccess": "Requisito '{{name}}' eliminado correctamente.",
+        "deleteError": "Error al eliminar el requisito '{{name}}'"
+      },
+      "searchPlaceholder": "Buscar requisitos...",
+      "filterPlaceholder": "Filtrar",
+      "filterTypes": {
+        "all": "Todos los Tipos",
+        "text": "Solo Texto",
+        "document": "Documentos"
+      },
+      "lastUpdated": "Última actualización:",
+      "documents": "Documentos",
+      "documentCount": "Documento(s)",
+      "addDocument": "Añadir Documento",
+      "noRequirementSelected": "Selecciona un requisito para ver sus detalles.",
+      "actions": {
+        "title": "Acciones",
+        "edit": "Editar",
+        "view": "Ver",
+        "viewTasks": "Ver Tareas",
+        "archive": "Archivar",
+        "delete": "Eliminar"
+      },
+      "viewMode": {
+        "cards": "Vista de Tarjetas",
+        "table": "Vista de Tabla"
+      },
+      "expandText": "Haz clic para expandir",
+      "documentName": "PSO - Documentación y Requisitos del Proyecto",
+      "documentAdded": "Añadido",
+      "noRequirements": "No se encontraron requisitos. Haz clic en \"Añadir Requisitos\" para añadir nuevos requisitos para este proyecto.",
+    "archivedMessage": "{name} ha sido archivado exitosamente",
+    "archived": "Proyecto archivado"
+    },
+    "qa": {
+      "title": "Preguntas y Respuestas",
+      "description": "Seguimiento de preguntas y respuestas relacionadas con el proyecto."
+    },
+    "functionalSpecifications": {
+      "title": "Especificaciones Funcionales",
+      "description": "Especificaciones funcionales detalladas para el proyecto."
+    },
+    "workBreakdown": {
+      "title": "Desglose de Trabajo",
+      "description": "Estructura de desglose de trabajo y tareas del proyecto."
+    },
+    "payment_frequencyUpdated": "Frecuencia de pago actualizada",
+    "payment_frequencyUpdateSuccess": "La frecuencia de pago se ha actualizado correctamente",
+    "payment_frequencyUpdateFailed": "Error al actualizar la frecuencia de pago",
+    "project_typeUpdated": "Tipo de proyecto actualizado",
+    "project_typeUpdateSuccess": "El tipo de proyecto se ha actualizado correctamente",
+    "project_typeUpdateFailed": "Error al actualizar el tipo de proyecto",
+    "start_dateUpdated": "Fecha de inicio actualizada",
+    "start_dateUpdateSuccess": "La fecha de inicio se ha actualizado correctamente",
+    "start_dateUpdateFailed": "Error al actualizar la fecha de inicio",
+    "planned_end_dateUpdated": "Fecha de finalización actualizada",
+    "planned_end_dateUpdateSuccess": "La fecha de finalización se ha actualizado correctamente",
+    "planned_end_dateUpdateFailed": "Error al actualizar la fecha de finalización",
+    "customer_idUpdated": "Cliente actualizado",
+    "customer_idUpdateSuccess": "El cliente se ha actualizado correctamente",
+    "customer_idUpdateFailed": "Error al actualizar el cliente"
+  },
+  "common": {
+    "idCopiedToClipboard": "ID copiado al portapapeles",
+    "copied": "Copiado",
+    "failedToCopy": "Error al copiar",
+    "error": "Se ha producido un error. Por favor, inténtalo de nuevo.",
+    "notSet": "No establecido",
+    "copyId": "Copiar ID",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "areYouSure": "¿Estás seguro?",
+    "confirm": "Confirmar",
+    "view": "Ver"
+  }
+}

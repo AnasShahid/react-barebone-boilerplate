@@ -1,0 +1,136 @@
+{
+  "organization": {
+    "common": {
+      "users": "Usuarios",
+      "invites": "Invitaciones",
+      "actions": "Acciones",
+      "email": "Correo electrónico",
+      "role": "Rol",
+      "name": "Nombre",
+      "website": "Sitio web",
+      "industry": "Industria",
+      "contactNumber": "Número de contacto",
+      "primaryAddress": "Dirección principal",
+      "billingAddress": "Dirección de facturación",
+      "required": "*",
+      "save": "Guardar cambios",
+      "saving": "Guardando...",
+      "cancel": "Cancelar",
+      "close": "Cerrar",
+      "loading": "Cargando...",
+      "error": "Error",
+      "member": "Miembro",
+      "admin": "Administrador",
+      "noData": "No se encontraron datos"
+    },
+    "usersTable": {
+      "title": "Usuarios",
+      "inviteUser": "Invitar usuario",
+      "email": "Correo electrónico",
+      "role": "Rol",
+      "actions": "Acciones",
+      "noUsersFound": "No se encontraron usuarios",
+      "makeAdmin": "Hacer administrador",
+      "setAsMember": "Establecer como miembro",
+      "emailUser": "Enviar correo al usuario",
+      "removeUser": "Eliminar usuario"
+    },
+    "invitesTable": {
+      "title": "Invitaciones",
+      "email": "Correo electrónico",
+      "invitedBy": "Invitado por",
+      "invitedDate": "Fecha de invitación",
+      "expiry": "Vencimiento",
+      "role": "Rol",
+      "status": "Estado",
+      "actions": "Acciones",
+      "noInvitesFound": "No se encontraron invitaciones",
+      "deleteInvite": "Eliminar invitación",
+      "statusLabels": {
+        "pending": "Pendiente",
+        "accepted": "Aceptada",
+        "rejected": "Rechazada",
+        "expired": "Expirada"
+      },
+      "unknown": "Desconocido"
+    },
+    "editOrgForm": {
+      "title": "Información de la organización",
+      "namePlaceholder": "Nombre de la organización",
+      "websitePlaceholder": "https://ejemplo.com",
+      "emailPlaceholder": "info@ejemplo.com",
+      "contactNumberPlaceholder": "+1 (555) 123-4567",
+      "selectIndustry": "Seleccionar una industria",
+      "primaryAddressPlaceholder": "Ingrese la dirección principal",
+      "billingAddressPlaceholder": "Ingrese la dirección de facturación",
+      "validation": {
+        "nameRequired": "El nombre de la organización es obligatorio",
+        "websiteRequired": "El sitio web es obligatorio",
+        "websiteValid": "Por favor, introduzca una URL válida",
+        "emailRequired": "El correo electrónico es obligatorio",
+        "emailValid": "Por favor, introduzca una dirección de correo electrónico válida",
+        "contactNumberRequired": "El número de contacto es obligatorio",
+        "contactNumberValid": "Por favor, introduzca un número de teléfono válido",
+        "industryRequired": "La industria es obligatoria",
+        "primaryAddressRequired": "La dirección principal es obligatoria",
+        "billingAddressRequired": "La dirección de facturación es obligatoria"
+      },
+      "industries": {
+        "tech": "Tecnología",
+        "healthcare": "Salud",
+        "finance": "Finanzas",
+        "education": "Educación",
+        "retail": "Comercio minorista",
+        "manufacturing": "Fabricación",
+        "consulting": "Consultoría",
+        "other": "Otro"
+      }
+    },
+    "sendUserInvites": {
+      "title": "Invitar usuarios",
+      "description": "Invita a usuarios a unirse a tu organización. Puedes añadir varios usuarios a la vez.",
+      "loadingRoles": "Cargando roles disponibles...",
+      "errorLoadingRoles": "Error al cargar los roles. Por favor, inténtalo de nuevo.",
+      "inviteNumber": "Invitación #{{number}}",
+      "inviteUser": "Invite User",
+      "remove": "Eliminar",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "correo@ejemplo.com",
+      "roleLabel": "Rol",
+      "roleDescription": "El rol determina qué permisos tendrá el usuario.",
+      "selectRole": "Seleccionar un rol",
+      "addAnother": "Añadir otra invitación",
+      "sendInvites": "Enviar invitaciones",
+      "sending": "Enviando...",
+      "toast": {
+        "success": "Se ha enviado {{count}} invitación correctamente",
+        "successMultiple": "Se han enviado {{count}} invitaciones correctamente",
+        "partialSuccess": "Se ha enviado {{success}} invitación, pero {{failure}} falló",
+        "partialSuccessMultiple": "Se han enviado {{success}} invitaciones, pero {{failure}} fallaron",
+        "error": "No se pudo enviar {{count}} invitación",
+        "errorMultiple": "No se pudieron enviar {{count}} invitaciones",
+        "generalError": "Algo salió mal al enviar las invitaciones"
+      }
+    },
+    "pages": {
+      "organizationsPage": {
+        "title": "Organizaciones",
+        "createOrg": "Crear organización",
+        "noOrgs": "Aún no tienes ninguna organización",
+        "createYourFirst": "Crea tu primera organización"
+      },
+      "editOrganizationInfo": {
+        "title": "Información de la organización",
+        "backToOrgs": "Volver a organizaciones"
+      },
+      "editOrganizationUsers": {
+        "title": "Usuarios de la organización",
+        "backToOrgs": "Volver a organizaciones"
+      },
+      "editOrganizationRoles": {
+        "title": "Roles de la organización",
+        "backToOrgs": "Volver a organizaciones"
+      }
+    }
+  }
+}

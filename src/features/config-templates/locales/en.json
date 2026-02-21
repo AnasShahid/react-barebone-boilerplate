@@ -1,0 +1,16 @@
+{
+  "config-templates": {
+    "title": "Project Config Templates",
+    "description": "Manage project configuration templates.",
+    "addConfigTemplate": "Add Config Template",
+    "searchPlaceholder": "Search config templates...",
+    "statusFilterPlaceholder": "Filter by status",
+    "statuses": {
+      "ALL": "All Statuses",
+      "ACTIVE": "Active",
+      "LEAD": "Lead",
+      "PROSPECT": "Prospect",
+      "INACTIVE": "Inactive"
+    }
+  }
+}

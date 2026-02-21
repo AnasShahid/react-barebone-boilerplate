@@ -1,0 +1,67 @@
+{
+  "auth": {
+    "login": {
+      "title": "Login to React-boilerplate AI",
+      "description": "Enter your credentials to access your account",
+      "email": "Email",
+      "emailPlaceholder": "email@example.com",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "submit": "Sign In",
+      "signingIn": "Signing in...",
+      "forgotPassword": "Forgot password?",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign Up",
+      "rememberMe": "Remember me"
+    },
+    "register": {
+      "title": "Create an Account",
+      "description": "Sign up for a new account",
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "john@example.com",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Sign Up",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign In",
+      "termsAccept": "I accept the terms and conditions"
+    },
+    "forgotPassword": {
+      "title": "Reset Password",
+      "description": "Enter your email to reset your password",
+      "email": "Email",
+      "submit": "Send Reset Link",
+      "backToLogin": "Back to Login"
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "description": "Enter your email to receive a password reset link",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "submit": "Send Reset Code",
+      "sending": "Sending..."
+    },
+    "otp": {
+      "title": "Enter verification code",
+      "description": "Enter the 6-digit code sent to your email",
+      "code": "Verification Code",
+      "verify": "Verify Code",
+      "verifying": "Verifying...",
+      "resend": "Resend code"
+    },
+    "newPassword": {
+      "title": "Set New Password",
+      "description": "Create a new password for your account",
+      "newPassword": "New Password",
+      "newPasswordPlaceholder": "Enter new password",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm new password",
+      "submit": "Reset Password",
+      "resetting": "Resetting...",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 8 characters long"
+    }
+  }
+}

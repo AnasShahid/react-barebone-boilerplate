@@ -1,0 +1,63 @@
+{
+  "common": {
+    "welcome": "Welcome to React + Javascript + Shadcn UI",
+    "navigation": {
+      "home": "Home",
+      "pricing": "Pricing",
+      "login": "Login",
+      "signup": "Sign Up",
+      "dashboard": "Dashboard",
+      "profile": "Profile",
+      "settings": "Settings",
+      "logout": "Logout"
+    },
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "settings": "Settings",
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "deleting": "Deleting...",
+    "upload": "Upload",
+    "uploading": "Uploading...",
+    "close": "Close",
+    "view": "View",
+    "edit": "Edit"
+  },
+  "home": {
+    "title": "Modern React Template",
+    "subtitle": "Start your next project with Javascript, React and Shadcn UI",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "features": {
+      "title": "Features",
+      "javascript": "Javascript Support",
+      "components": "Reusable Components",
+      "themes": "Light/Dark Themes",
+      "i18n": "Internationalization"
+    }
+  },
+  "error": {
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "Sorry, we couldn't find the page you're looking for. Please check the URL or return to the home page."
+    },
+    "unauthorized": {
+      "title": "Unauthorized Access",
+      "description": "You need to log in to access this page. Please log in and try again."
+    },
+    "serverError": {
+      "title": "Server Error",
+      "description": "Sorry, something went wrong on our server. Please try again later or contact support if the problem persists."
+    },
+    "action": {
+      "backHome": "Back to Home",
+      "login": "Login",
+      "tryAgain": "Try Again"
+    }
+  }
+}

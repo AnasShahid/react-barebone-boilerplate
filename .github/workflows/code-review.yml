@@ -1,0 +1,10 @@
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  review:
+    uses: sociilabs/.github/.github/workflows/reusable-code-review.yml@main
+    secrets: inherit
